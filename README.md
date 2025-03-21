@@ -120,12 +120,18 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > First, we declare a variable assigned to a function (querySelectory) to to go through our html and selects the element of "article" in our DOM.  
+   > Next, potteryHTML is the function we wrote that contains the HTML text template we want to modify. the function of usePottery() will pass its return value of the structured clone array as the argument
+    > article is the element of our DOM we want to insert our HTML, so we target the innerHTML which will replace the article element's previous content with our new HTML that is composed with the data from our structured clone array.       
+
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > (https://www.loom.com/share/aa35da7abaf7458493a308d0a15c7370)
+
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > So, it can be a modular function that we can use multiple times to input new pottery pieces (parameters) and return an object. Also it keeps our code cleaner, and easier to follow.
+
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > In the function toSellOrNotToSell, I would need to change my else statement to set the price property of potteryItem to $2.50 instead of deleting the price property.
+
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > (https://www.loom.com/share/5d5e26a2c3234c0cb1c1c78f00982863)
